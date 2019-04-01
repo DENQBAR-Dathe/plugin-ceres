@@ -3,6 +3,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="plentymarkets" />
 
+{% if ceresConfig.log.googleSiteVerification is not empty %}
+<meta name="google-site-verification" content="{{ ceresConfig.log.googleSiteVerification }}" />
+{% endif %}
+
 {% set lang = services.sessionStorage.getLang() %}
 
 {% if ceresConfig.global.favicon is empty %}

@@ -4288,6 +4288,15 @@
         "Config.LoggingAndPerformanceTab": {
             "label": "Config.loggingAndPerformanceTab",
             "formFields": {
+                "log.googleSiteVerification": {
+                    "type": "inputText",
+                    "required": false,
+                    "shopBuilder": true,
+                    "label": "Google Site Verification",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
                 "log.data": {
                     "type": "multiCheckBox",
                     "required": false,
