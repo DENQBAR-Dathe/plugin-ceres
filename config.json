@@ -3310,6 +3310,15 @@
         "Config.SEOTab": {
             "label": "Config.seoTab",
             "formFields": {
+                "meta.googleSiteVerification": {
+                    "type": "inputText",
+                    "required": false,
+                    "shopBuilder": true,
+                    "label": "Google Site Verification",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
                 "meta.robots_home": {
                     "type": "selectBox",
                     "required": false,
@@ -4288,15 +4297,6 @@
         "Config.LoggingAndPerformanceTab": {
             "label": "Config.loggingAndPerformanceTab",
             "formFields": {
-                "log.googleSiteVerification": {
-                    "type": "inputText",
-                    "required": false,
-                    "shopBuilder": true,
-                    "label": "Google Site Verification",
-                    "options": {
-                        "defaultValue": ""
-                    }
-                },
                 "log.data": {
                     "type": "multiCheckBox",
                     "required": false,

@@ -29,11 +29,14 @@ class CeresMetaConfig extends PluginConfig
     public $descriptionTermsAndConditions_de;
     public $descriptionTermsAndConditions_en;
     public $robotsSearchResult;
+    public $googleSiteVerification;
 
     public function __construct(ConfigRepository $configRepository)
     {
         parent::__construct($configRepository, "Ceres");
-        
+
+        $this->googleSiteVerification               = $this->getTextValue( "meta.googleSiteVerification", "" );
+
         $this->robotsHome                           = $this->getTextValue( "meta.robots_home" , "all" );
         $this->descriptionHome_de                   = $this->getTextValue( "meta.de.description_home" );
         $this->descriptionHome_en                   = $this->getTextValue( "meta.en.description_home" );
